@@ -1,0 +1,879 @@
+@font-face {
+      font-family: sohailK;
+      src: url(images/KFOmCnqEu92Fr1Mu4mxK.ttf);
+}
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sohailK;
+}
+
+head,
+body {
+      height: 100%;
+      width: 100%;
+}
+
+.main {
+      height: 100%;
+      width: 100%;
+      background-image: url('https://scissorsscotch.com/static/ss-assets/front/ss-design/assets/img/bg-shapes/diamond-background.svg');
+      /* background-size: cover; */
+      overflow: hidden;
+
+}
+
+.page-1 {
+      width: 100%;
+      height: 100vh;
+      background-image: url('https://scissorsscotch.com/static/ss-assets/front/ss-design/assets/img/scissors-scotch/backgrounds/Scissors&ScotchNavyYard-4-optimized.jpg');
+      /* background-position: center; */
+      background-size: cover;
+      position: relative;
+}
+
+.tophead {
+      padding: 1vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+}
+
+.logo img {
+      height: 40px;
+      cursor: pointer;
+}
+
+.nav ul {
+      display: flex;
+      gap: 30px;
+
+
+}
+
+#location {
+      color: rgb(145, 5, 5);
+      font-size: 17px;
+      padding-right: 4px;
+}
+
+#user {
+      font-size: 18px;
+      color: rgb(206, 7, 7);
+      transition: .5s;
+}
+
+#user:hover {
+      color: white;
+}
+
+li {
+      list-style: none
+}
+
+.nav ul li a {
+      text-decoration: none;
+      color: rgb(255, 243, 243);
+      font-size: 13.5px;
+      font-weight: 100;
+      letter-spacing: -0.3px;
+
+}
+
+.menu {
+      display: none;
+      font-size: 20px;
+      color: white;
+}
+
+#bookdeg {
+      padding: 10px 18px;
+      border: 1px solid red;
+      transition: .5s;
+      font-size: 12px;
+}
+
+#bookdeg:hover {
+      background-color: #ED1C24;
+}
+
+/* -----------for pop-up----------------- */
+#membertoken {
+      z-index: 0;
+      position: absolute;
+      top: 30%;
+      display: none;
+      height: 300px;
+      width: 350px;
+      background-color: #fff;
+
+}
+
+#membertoken .top {
+      height: 60px;
+      padding: 0 2vw;
+      background-color: #F8F9FA;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+}
+
+#membertoken .top h1 {
+      font-size: 1.4vw;
+      font-weight: 100;
+}
+
+#cross {
+      cursor: pointer;
+}
+
+#membertoken .center {
+      padding: 1.5vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      justify-content: center;
+}
+
+#membertoken .center h3 {
+      font-weight: 100;
+      font-size: 18px;
+}
+
+#membertoken .center h2 {
+      color: #461E0D;
+      font-size: 22px;
+}
+
+#membertoken .center p {
+      color: rgb(135, 138, 141);
+      font-size: 12px;
+}
+
+#membertoken .center a {
+      text-decoration: none;
+      background-color: #461E0D;
+      color: rgb(255, 255, 255);
+      padding: 1vw 8vw;
+      margin-top: 10px;
+      font-size: 12px;
+      font-weight: 600;
+}
+
+#location2 {
+      color: rgba(212, 13, 13, 0.89);
+}
+
+/* -----------------------------xxxxx------------------------ */
+.page1-content {
+      width: 100%;
+      height: 75vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+
+}
+
+.page1-content h1 {
+
+      font-size: 45px;
+      font-weight: 600;
+      color: white;
+      letter-spacing: 2px;
+}
+
+.page1-content p {
+      font-size: 17px;
+      color: white;
+}
+
+.page1-content a {
+      margin-top: 20px;
+      text-decoration: none;
+      font-size: 13.5px;
+      color: white;
+      padding: 15px 46px;
+      background-color: #ED1C24;
+}
+
+.page1-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.page1-bottom p {
+      text-decoration: none;
+      color: white;
+}
+
+/* --------------responsive--------------- */
+@media screen and (max-width: 990px) {
+      .tophead {
+            /* padding: 1vw; */
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: space-evenly;
+            align-items: center;
+      }
+}
+
+@media screen and (max-width: 780px) {
+      .page1-content {
+            flex-direction: column;
+      }
+
+      .page1-content h1 {
+            width: 60%;
+            text-align: center;
+      }
+
+      .nav ul {
+            /* display: none; */
+            gap: 20px;
+      }
+}
+
+@media screen and (max-width: 750px) {
+      .page-1 {
+            width: 100%;
+            height: 100vh;
+            background-image: url('https://scissorsscotch.com/static/ss-assets/front/ss-design/assets/img/scissors-scotch/backgrounds/door-chair.jpg');
+            /* background-position: center; */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+      }
+
+      .tophead {
+            /* padding: 1vw; */
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: space-evenly;
+            align-items: center;
+      }
+
+      .nav {
+            display: none;
+      }
+
+      .menu {
+            display: block;
+      }
+
+      .page1-content h1 {
+            font-size: 39px;
+            width: 68%;
+            text-align: center;
+            line-height: 50px;
+      }
+
+      .page1-content p {
+
+
+            text-align: center;
+
+      }
+
+      .page1-bottom p {
+            text-align: center;
+      }
+
+}
+
+/* ------------------page-2---------------  */
+.page-2 {
+      min-height: 70vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 10vw;
+
+}
+
+.text2-center {
+      margin-top: 40px;
+      text-align: center;
+}
+
+.text2-center h1 {
+      font-size: 51px;
+      font-weight: 700;
+}
+
+.text2-center p {
+      margin-top: 14px;
+      font-size: 20px;
+      line-height: 1.8;
+      text-align: center;
+      font-weight: 100;
+      color: rgb(165, 161, 158);
+}
+
+#text-ed {
+      font-size: 15px;
+      margin-top: 30px;
+}
+
+.text2-center h2 {
+      margin-top: 40px;
+      letter-spacing: 1.3px;
+      cursor: pointer;
+}
+
+#location3 {
+      color: red;
+      cursor: none;
+}
+
+.page-3 {
+     min-height: 100vh;
+      width: 100%;
+      padding: 2vw 9vw;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+}
+
+.left-side {
+      width: 41%;
+}
+
+.left-side h2 {
+      
+      font-size: 32px;
+      line-height: 1.6;
+}
+
+.left-side .para-deg {
+      color: rgb(165, 161, 158);
+      padding: 10px 0;
+      line-height: 1.8;
+}
+
+.left-side .add {
+      /* color: rgb(165, 161, 158); */
+      display: flex;
+      gap: 30px;
+      padding: 10px 0;
+      line-height: 1.8;
+      /* align-items: center; */
+}
+
+#location3 {
+      color: red;
+      font-size: 23px;
+}
+
+#phone1 {
+      color: red;
+      font-size: 23px;
+}
+
+.phone {
+      display: flex;
+      gap: 30px;
+      padding: 10px 0;
+      line-height: 1.8;
+      align-items: center;
+}
+
+.clock1 {
+      display: flex;
+      gap: 30px;
+      padding: 10px 0;
+      line-height: 1.8;
+}
+
+#clock-1 {
+      color: red;
+      font-size: 23px;
+}
+
+.right-side img {
+      height: 400px;
+
+}
+@media screen and (max-width: 750px) {
+      .page-3 {
+            margin-bottom: 100px;
+            display: flex;
+         
+           flex-direction: column;
+           
+      
+      }
+      .left-side h2 {
+      text-align: center;
+      }
+      .left-side {
+            width: 100%;
+      }
+}
+/* -------------------page-4---------------- */
+.page-4 {
+      width: 100%;
+      min-height: 80vh;
+      background-image: url('https://scissorsscotch.com/static/ss-assets/front/ss-design/assets/img/scissors-scotch/gift-cards/whiskey-bg-wood3.jpg');
+      background-position: center center;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+}
+
+.page-4 h1 {
+      text-align: center;
+      color: white;
+      font-size: 53px;
+}
+
+.page-4 a {
+      text-decoration: none;
+      background-color: rgb(237, 28, 36);
+      padding: 18px 28px;
+      color: white;
+      font-size: 17px;
+}
+
+.page-4 a:hover {
+      box-shadow: 1px 0 10px 0px rgb(237, 28, 36);
+}
+
+.page-5 {
+      height: 100vh;
+      width: 100%;
+      padding: 10vw 8vw;
+      display: flex;
+      justify-content: center;
+}
+
+.left-cont {
+      width: 35%;
+}
+
+.left-cont h1 {
+      font-size: 50px;
+      width: 90%;
+      /* padding-bottom: 30px; */
+      margin-bottom: 20px;
+}
+
+.left-cont p {
+      font-size: 20px;
+
+}
+
+.right-cont {
+      display: flex;
+      gap: 25px;
+}
+
+.boxes .text {
+      padding: 45px 55px;
+      border: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+.boxes .text p {
+      font-size: 18px;
+      color: #ababac;
+      line-height: 2;
+}
+
+.right-cont .profile-img-nme img {
+      border-radius: 50%;
+      height: 50px;
+}
+
+.profile-img-nme {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+}
+
+.profile-img-nme p {
+      font-size: 20px;
+}
+@media screen and (max-width: 750px) {
+      .page-5{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+      }
+      .left-cont  {
+           
+         /* text-align: center; */
+            width: 100%;
+      }
+      .boxes .text {
+            padding: 10px;
+            
+      }
+      .right-cont {
+           margin-top: 40px;
+      }
+           
+}
+.page-6 {
+      background-image: url('https://scissorsscotch.com/static/ss-assets/front/ss-design/assets/img/scissors-scotch/sepia/resized/optimized/groomingfloor2.jpg');
+      min-height: 80vh;
+      width: 100%;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.page-6 i {
+      font-size: 100px;
+      color: white;
+      cursor: pointer;
+      transition: .4s;
+}
+
+.page-6 i:hover {
+      scale: 1.2;
+}
+
+.page-7 {
+      min-height: 100vh;
+      width: 100%;
+      padding: 10vw 8vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      gap: 40px;
+      ;
+}
+
+.icon-list {
+      display: flex;
+      gap: 120px;
+      /* justify-content: space-between; */
+}
+
+.icon i {
+      color: #ED1C24;
+      font-size: 70px;
+}
+
+.icon h4 {
+      padding: 30px;
+      font-size: 20px;
+}
+
+.headtxt h1 {
+      font-size: 3.3vw;
+      font-weight: 900;
+      letter-spacing: 0.4px;
+
+
+}
+
+.para-txt p {
+      font-size: 20px;
+      color: #ababac;
+      font-weight: 100;
+      line-height: 2;
+      margin-bottom: 15px;
+}
+
+.btn a {
+      color: black;
+      text-decoration: none;
+      padding: 15px 45px;
+      border: 1px solid #ED1C24;
+      transition: .3s linear;
+}
+
+.btn a:hover {
+      background-color: #ED1C24;
+      color: white;
+}
+@media screen and (max-width: 750px) {
+      .icon-list {
+            display: flex;
+            flex-direction: column;
+            /* gap: 120px; */
+            /* justify-content: space-between; */
+      }
+}
+.page-8 {
+      width: 100%;
+      min-height: 80vh;
+      background-image: url('https://scissorsscotch.com/static/ss-assets/front/ss-design/assets/img/scissors-scotch/backgrounds/gear.jpg');
+      background-position: center center;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+}
+
+.page-8 h1 {
+      color: white;
+      font-size: 53px;
+      text-align: center;
+}
+
+.page-8 a {
+      text-decoration: none;
+      background-color: rgb(237, 28, 36);
+      padding: 15px 38px;
+      color: white;
+      font-size: 17px;
+}
+
+.page-8 a:hover {
+      box-shadow: 1px 0 10px 0px rgb(237, 28, 36);
+}
+
+.page-9 {
+      min-height: 100vh;
+      width: 100%;
+      padding: 8vw 10vw;
+      display: flex;
+      /* justify-content: space-between; */
+      gap: 130px;
+      align-items: center;
+}
+
+.page-9 img {
+      height: 450px;
+}
+
+.page9-center-para {
+      font-size: 20px;
+      color: #a2a2aa;
+      font-weight: 100;
+      line-height: 1.5;
+      letter-spacing: .21px;
+      margin: 25px 0 45px;
+}
+
+lft-content p {
+      font-size: 45px;
+      letter-spacing: 1.2px;
+      font-weight: 50;
+      color: rgba(0, 0, 0, 0.795);
+
+}
+
+lft-content h1 {
+      font-size: 60px;
+}
+
+lft-content a {
+
+      text-decoration: none;
+      background-color: rgb(237, 28, 36);
+      padding: 15px 14px;
+      color: white;
+
+      /* font-size: 17px; */
+}
+@media screen and (max-width: 750px) {
+      .page-9 {
+       
+            
+           margin: 100px 0;
+            display: flex;
+            flex-direction: column;
+           gap: 10px;
+            align-items: center;
+      }
+      
+      .page-9 img {
+            height: 600px;
+      }
+}
+.page-10 {
+      width: 100%;
+      min-height: 85vh;
+      background-image: url('https://scissorsscotch.com/static/ss-assets/front/ss-design/assets/img/scissors-scotch/sepia/resized/optimized/rita_client2.jpg');
+      background-position: center center;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+}
+
+.page-10 h1 {
+      color: white;
+      font-size: 48px;
+      text-align: center;
+}
+
+.page-10 a {
+      text-decoration: none;
+      border: 1px solid #ED1C24;
+      padding: 15px 20px;
+      color: white;
+      font-size: 17px;
+      transition: .3s;
+}
+
+.page-10 a:hover {
+      background-color: rgb(237, 28, 36);
+}
+
+.page-11 {
+      height: 80vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      flex-direction: column;
+}
+
+.page-11 h1 {
+      font-size:52px;
+      font-weight: 900;
+      text-align: center;
+}
+
+.slider {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+
+
+}
+
+.logo-1 {
+      display: flex;
+      align-items: center;
+
+      justify-content: center;
+      height: 250px;
+      width: 180px;
+      background-color: #F8F9FA;
+}
+
+.logo-1 img {
+      height: 105px;
+
+}
+
+.footer {
+      min-height: 65vh;
+      width: 100%;
+      background-color: #260F01;
+     
+      padding: 5vw 14vw 5vw 7vw;
+     
+
+}
+.footer .content{
+      display: flex;
+      justify-content: space-evenly;
+      padding-bottom:4.5vw ;
+}
+.left-content p {
+    
+      font-size: 13px;
+      width: 64%;;
+      line-height: 1.7;
+      color: #ababac;
+      margin-top: 6px;
+}
+
+.logo3 img {
+      height: 60px;
+}
+
+.right-content {
+      display: flex;
+      gap: 120px;
+  
+  
+}
+.rows h4{
+      font-size: 20px;
+      color: white;
+      font-weight: 100;
+      margin-bottom: 10px;
+}
+.rows li{
+     
+      list-style: none;
+      padding: 10px 0;
+}
+.rows a{
+      text-decoration: none;
+      color: rgb(172, 166, 166);
+      font-size: 14px;
+      transition: .3s;
+}
+.rows a:hover{
+      color: white;
+}
+.foot-content{
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+}
+.links-icon{
+   display: flex;
+   gap: 13px;
+}
+.links-icon a{
+      text-decoration: none;
+      color:white ;
+      padding-left:22px ;
+      padding: 8px;
+      transition: .3s;
+}
+.links-icon a:hover{
+      color: black;
+      background-color: white;
+      box-shadow: 0 2px 10px white;
+}
+.copyrights{
+      color: rgb(179, 166, 166);
+      font-size: 13px;
+}
+@media screen and (max-width: 1000px) {
+      .footer .content{
+            display: flex;
+         flex-direction: column;
+         gap: 30px;
+
+      }
+      .left-content p {
+         
+           
+            width: 100%;
+            
+      }
+      .foot-content{
+          flex-direction: column;
+            display: flex;
+            align-items:center;
+          
+      }
+      .right-content{
+            flex-wrap: wrap;
+      }
+}
